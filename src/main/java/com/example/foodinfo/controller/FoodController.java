@@ -18,11 +18,11 @@ public class FoodController {
     @Autowired
     FoodService foodService;
 
-    @GetMapping("/getAllFoodItems")
-    public ResponseEntity<List<FoodDto>> getFoodItems(){
-        List<FoodDto> allfoods=foodService.fetchallfooditems();
-        return new ResponseEntity<>(allfoods, HttpStatus.OK);
-    }
+//    @GetMapping("/getAllFoodItems")
+//    public ResponseEntity<List<FoodDto>> getFoodItems(){
+//        List<FoodDto> allfoods=foodService.fetchallfooditems();
+//        return new ResponseEntity<>(allfoods, HttpStatus.OK);
+//    }
 
     @PostMapping("/addFoodItem")
     public ResponseEntity<FoodDto> addFoodItems(@RequestBody FoodDto foodDto){
